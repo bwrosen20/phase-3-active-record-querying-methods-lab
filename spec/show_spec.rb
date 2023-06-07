@@ -1,3 +1,5 @@
+require "pry"
+
 require_relative 'spec_helper'
 
 describe Show do
@@ -7,7 +9,7 @@ describe Show do
     Show.create(name: "The Cleveland Show", day: "Monday", network: "Fox", rating: 2)
     Show.create(name: "Fear the Walking Dead", day: "Sunday", network: "AMC", rating: 3)
   end
-
+  
   # Yes, .first through .fourth are all Active Record methods!
   # .fifth and .forty_two also work (but not others)
   let(:rick_and_morty) { Show.first }
